@@ -1,4 +1,4 @@
-package thread.cas;
+package thread.cas.increment;
 
 import util.ThreadUtils;
 
@@ -12,6 +12,7 @@ public class IncrementThreadMain {
         test(new BasicInteger());
         test(new VolatileInteger());
         test(new SyncInteger());
+        test(new MyAtomicInteger());
     }
 
     private static void test(IncrementInteger increment) throws InterruptedException {
