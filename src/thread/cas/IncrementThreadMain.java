@@ -1,6 +1,5 @@
 package thread.cas;
 
-import util.MyLogger;
 import util.ThreadUtils;
 
 import java.util.ArrayList;
@@ -11,6 +10,8 @@ public class IncrementThreadMain {
 
     public static void main(String[] args) throws InterruptedException {
         test(new BasicInteger());
+        test(new VolatileInteger());
+        test(new SyncInteger());
     }
 
     private static void test(IncrementInteger increment) throws InterruptedException {
